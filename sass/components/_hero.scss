@@ -1,0 +1,8 @@
+.hero {
+  &__container {
+    @include centered;
+  }
+  &__img {
+    transform: scaleX(-1);
+  }
+}

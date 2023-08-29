@@ -1,0 +1,11 @@
+$colors: (
+  'white': #fff,
+  'white-o40': #ffffff66,
+  'bg-color1': #101113,
+  'bg-color2': #1e1e1e,
+  'highlighted-color': #a6a001,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

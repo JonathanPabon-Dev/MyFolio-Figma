@@ -1,0 +1,44 @@
+@import 'utils/fonts';
+@import 'utils/colors';
+@import 'utils/mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: getFont('page'), sans-serif;
+  color: getColor('white');
+  background-color: getColor('bg-color1');
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.section {
+  padding-top: 120px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:visited {
+    color: currentColor;
+  }
+}
+
+.btn {
+  border-style: none;
+  background: none;
+  cursor: pointer;
+}
+
+@import 'components/header';
+@import 'components/hero';
