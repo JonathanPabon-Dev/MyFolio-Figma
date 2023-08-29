@@ -102,6 +102,63 @@ a:visited {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 50px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, #101113 40%);
+  background-position: 220px -100px;
+}
+.hero__texts--subtitle {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.26;
+  text-transform: capitalize;
+}
+.hero__texts--title {
+  margin: 33px 0;
+  font-size: 64px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  line-height: 1.26;
+  text-transform: uppercase;
+}
+.hero__texts--name {
+  color: #a6a001;
+}
+.hero__texts--intro {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.66;
+  margin-bottom: 50px;
+}
+.hero__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  height: 42px;
+  padding: 0 15px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.hero__btn--color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #a6a001;
+  border-radius: 24px;
+  width: 42px;
+  height: 42px;
+  transition: 300ms ease-in-out;
+}
+.hero__btn--text {
+  z-index: 1;
+}
+.hero__btn--text::after {
+  margin-left: 10px;
+  content: ">";
+}
+.hero__btn:hover .hero__btn--color {
+  width: 100%;
 }
 .hero__img {
   transform: scaleX(-1);
