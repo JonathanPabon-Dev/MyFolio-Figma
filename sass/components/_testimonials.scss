@@ -1,0 +1,36 @@
+.testimonials {
+  @include createFlex($direction: column);
+  &__container {
+    position: relative;
+    @include createFlex($justify: space-between);
+    width: 100%;
+    padding: 70px 50px;
+    background-color: getColor('bg-color2');
+    border-radius: 15px;
+    .section__name {
+      @include positionSectionName(right);
+    }
+  }
+  &__texts {
+    width: 603px;
+    .person {
+      &__name {
+        font-size: 36px;
+        font-weight: 400;
+        margin-bottom: 25px;
+      }
+      &__declaration {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 1.42;
+        color: getColor('tx-color2');
+      }
+    }
+  }
+  &__icon {
+    width: 121px;
+    height: 97px;
+    fill: getColor('quotes-color');
+    float: right;
+  }
+}

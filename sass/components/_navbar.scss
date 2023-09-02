@@ -1,0 +1,16 @@
+.navbar {
+  &__list {
+    @include createFlex;
+    gap: 50px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  &__item {
+    &--active,
+    &:hover,
+    &:focus,
+    &:focus-within {
+      color: getColor('highlighted-color');
+    }
+  }
+}

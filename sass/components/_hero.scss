@@ -1,68 +1,32 @@
 .hero {
   &__container {
-    @include centered;
+    @include createFlex;
     gap: 50px;
     background: radial-gradient(circle, getColor('white-o40') 0%, getColor('bg-color1') 40%);
     background-position: 220px -100px;
   }
-  &__texts {
-    &--subtitle {
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 1.26;
-      text-transform: capitalize;
-    }
-    &--title {
-      margin: 33px 0;
-      font-size: 64px;
-      font-family: getFont('titles');
-      font-weight: 700;
-      line-height: 1.26;
-      text-transform: uppercase;
-    }
-    &--name {
-      color: getColor('highlighted-color');
-    }
-    &--intro {
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 1.66;
-      margin-bottom: 50px;
-    }
-  }
-  &__btn {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: max-content;
-    height: 42px;
-    padding: 0 15px;
+  &__subtitle {
     font-size: 18px;
     font-weight: 600;
-    line-height: 1.67;
-
-    &--color {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: getColor('highlighted-color');
-      border-radius: 24px;
-      width: 42px;
-      height: 42px;
-      transition: 300ms ease-in-out;
-    }
-    &--text {
-      z-index: 1;
-      &::after {
-        margin-left: 10px;
-        content: '>';
-      }
-    }
-    &:hover {
-      .hero__btn--color {
-        width: 100%;
-      }
-    }
+    line-height: 1.26;
+    text-transform: capitalize;
+  }
+  &__title {
+    margin: 33px 0;
+    font-size: 64px;
+    font-family: getFont('titles');
+    font-weight: 700;
+    line-height: 1.26;
+    text-transform: uppercase;
+  }
+  &__name {
+    color: getColor('highlighted-color');
+  }
+  &__intro {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.66;
+    margin-bottom: 50px;
   }
   &__img {
     transform: scaleX(-1);

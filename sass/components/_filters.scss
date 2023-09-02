@@ -1,0 +1,28 @@
+.filters {
+  &__list {
+    border-radius: 20px;
+    background: getColor('bg-color2');
+    padding: 20px;
+    @include createFlex;
+    column-gap: 20px;
+  }
+  &__item {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.67;
+    &--active,
+    &:hover,
+    &:focus,
+    &:focus-visible,
+    &:focus-within {
+      .filters__link {
+        background-color: getColor('highlighted-color');
+        color: getColor('bg-color2');
+      }
+    }
+  }
+  &__link {
+    padding: 15px 25px;
+    border-radius: 12px;
+  }
+}

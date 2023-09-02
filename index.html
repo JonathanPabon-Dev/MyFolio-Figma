@@ -3,39 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <title>My Folio. - Home</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__container container">
-        <a href="./index.html" class="header__logo">
-          My F<span class="header__logo--color">o</span>lio<span class="header__logo--color"
-            >.</span
-          >
+        <a href="./index.html" class="header__logo logo link">
+          My F<span class="logo--color">o</span>lio<span class="logo--color">.</span>
         </a>
-        <nav class="header__nav">
-          <ul class="nav__list list">
-            <li class="nav__list--item">
-              <a href="./index.html" class="nav__list--link active">Home</a>
+        <nav class="header__nav navbar">
+          <ul class="navbar__list list">
+            <li class="navbar__item navbar__item--active">
+              <a href="./index.html" class="navbar__link link">Home</a>
             </li>
-            <li class="nav__list--item">
-              <a href="#" class="nav__list--link">Pages</a>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link link">Pages</a>
             </li>
-            <li class="nav__list--item">
-              <a href="#" class="nav__list--link">Portfolio</a>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link link">Portfolio</a>
             </li>
-            <li class="nav__list--item">
-              <a href="#" class="nav__list--link">Blogs</a>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link link">Blogs</a>
             </li>
-            <li class="nav__list--item">
-              <a href="#" class="nav__list--link">Contact</a>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link link">Contact</a>
             </li>
           </ul>
         </nav>
-        <a href="#" class="header__talk">
-          <span class="header__talk--color"></span>
-          <p class="header__talk--text">Let's Talk</p>
+        <a href="#" class="header__btn btn__link link">
+          <span class="btn__circle"></span>
+          <p class="btn__text">Let's Talk</p>
         </a>
       </div>
     </header>
@@ -43,18 +45,212 @@
       <section class="hero">
         <div class="hero__container container">
           <div class="hero__texts">
-            <h4 class="hero__texts--subtitle">Hey There,</h2>
-            <h1 class="hero__texts--title">I’m <span class="hero__texts--name">Alexander</span><br>A UXUI Designer</h1>
-            <p class="hero__texts--intro">
+            <h4 class="hero__subtitle">Hey There,</h4>
+            <h1 class="hero__title">
+              I’m <span class="hero__name">Alexander</span><br />A UXUI Designer
+            </h1>
+            <p class="hero__intro">
               Design Club is a digital agency specialized in ecommerce. We build scalable, high-end
               web shops with composable commerce architecture.
             </p>
-            <a href="#" class="hero__btn">
-              <span class="hero__btn--color"></span>
-              <p class="hero__btn--text">About Me</p>
+            <a href="#" class="hero__btn btn__link link">
+              <span class="btn__circle"></span>
+              <p class="btn__text">About me</p>
             </a>
           </div>
-          <img class="hero__img" src="./images/person.png" alt="Alexander picture" width="623" />
+          <img class="hero__img" src="./images/alex.png" alt="Alexander picture" width="623" />
+        </div>
+      </section>
+      <section class="companies">
+        <ul class="companies__list list">
+          <li class="company__item">
+            <svg class="company__icon">
+              <use href="./images/icons.svg#icon-adobe"></use>
+            </svg>
+          </li>
+          <li class="company__item">
+            <svg class="company__icon">
+              <use href="./images/icons.svg#icon-ibm"></use>
+            </svg>
+          </li>
+          <li class="company__item">
+            <svg class="company__icon">
+              <use href="./images/icons.svg#icon-samsung"></use>
+            </svg>
+          </li>
+          <li class="company__item">
+            <svg class="company__icon">
+              <use href="./images/icons.svg#icon-microsoft"></use>
+            </svg>
+          </li>
+          <li class="company__item">
+            <svg class="company__icon">
+              <use href="./images/icons.svg#icon-adobe"></use>
+            </svg>
+          </li>
+          <li class="company__item">
+            <svg class="company__icon">
+              <use href="./images/icons.svg#icon-ibm"></use>
+            </svg>
+          </li>
+          <li class="company__item">
+            <svg class="company__icon">
+              <use href="./images/icons.svg#icon-samsung"></use>
+            </svg>
+          </li>
+          <li class="company__item">
+            <svg class="company__icon">
+              <use href="./images/icons.svg#icon-microsoft"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+      <section class="services section container">
+        <ul class="cards__list list">
+          <li class="card">
+            <svg class="card__icon">
+              <use href="./images/icons.svg#icon-uiux"></use>
+            </svg>
+            <h3 class="card__title">UI/UX Design</h3>
+            <p class="card__description">
+              We help e-commerce brands navigate the ever changing landscape of digital marketing
+              with best-in-class creative, personalized.
+            </p>
+          </li>
+          <li class="card">
+            <svg class="card__icon">
+              <use href="./images/icons.svg#icon-social"></use>
+            </svg>
+            <h3 class="card__title">Social Media</h3>
+            <p class="card__description">
+              We help e-commerce brands navigate the ever changing landscape of digital marketing
+              with best-in-class creative, personalized.
+            </p>
+          </li>
+          <li class="card">
+            <svg class="card__icon">
+              <use href="./images/icons.svg#icon-graphic"></use>
+            </svg>
+            <h3 class="card__title">Graphic Design</h3>
+            <p class="card__description">
+              We help e-commerce brands navigate the ever changing landscape of digital marketing
+              with best-in-class creative, personalized.
+            </p>
+          </li>
+        </ul>
+        <div class="section__name">SERVICES</div>
+      </section>
+      <section class="projects section container">
+        <h2 class="section__title">Portfolio</h2>
+        <div class="filters">
+          <ul class="filters__list list">
+            <li class="filters__item filters__item--active">
+              <a href="#" class="filters__link link">All</a>
+            </li>
+            <li class="filters__item">
+              <a href="#" class="filters__link link">Websites</a>
+            </li>
+            <li class="filters__item">
+              <a href="#" class="filters__link link">Mobile apps</a>
+            </li>
+            <li class="filters__item">
+              <a href="#" class="filters__link link">Social media Branding</a>
+            </li>
+            <li class="filters__item">
+              <a href="#" class="filters__link link">Graphics Design</a>
+            </li>
+            <li class="filters__item">
+              <a href="#" class="filters__link link">SEO</a>
+            </li>
+          </ul>
+        </div>
+        <div class="projects__container">
+          <div class="section__name">PROJECTS</div>
+          <div class="projects__gallery">
+            <div class="item1">
+              <a href="#" class="gallery__link link">
+                <img
+                  src="./images/gallery-img1.jpg"
+                  alt="Muckup transparent"
+                  class="gallery__img"
+                />
+                <div class="project__texts">
+                  <h2 class="project__title">Website Designing</h2>
+                  <p class="project__description">
+                    We help e-commerce brands navigate the ever changing landscape of digital
+                    marketing with best-in-class creative, personalized paid media strategies.
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="item2">
+              <a href="#" class="gallery__link link">
+                <img src="./images/gallery-img2.jpg" alt="Green top bottle" class="gallery__img" />
+                <div class="project__texts">
+                  <h2 class="project__title">UXUI - Graphic Designing</h2>
+                </div>
+              </a>
+            </div>
+            <div class="item3">
+              <a href="#" class="gallery__link link">
+                <img src="./images/gallery-img3.jpg" alt="Yellow bottle" class="gallery__img" />
+                <div class="project__texts">
+                  <h2 class="project__title">Web Development</h2>
+                </div>
+              </a>
+            </div>
+            <div class="item4">
+              <a href="#" class="gallery__link link">
+                <img
+                  src="./images/gallery-img4.jpg"
+                  alt="Mugs linked muckup"
+                  class="gallery__img"
+                />
+                <div class="project__texts">
+                  <h2 class="project__title">eousva - Product Branding</h2>
+                </div>
+              </a>
+            </div>
+            <div class="item5">
+              <a href="#" class="gallery__link link">
+                <img src="./images/gallery-img5.jpg" alt="Letter muckup" class="gallery__img" />
+                <div class="project__texts">
+                  <h2 class="project__title">Social Media</h2>
+                </div>
+              </a>
+            </div>
+            <div class="item6">
+              <a href="#" class="gallery__link link">
+                <img src="./images/gallery-img6.jpg" alt="Coffee muckup" class="gallery__img" />
+                <div class="project__texts">
+                  <h2 class="project__title">Product - Design</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="projects__btn btn__link link">
+          <span class="btn__circle"></span>
+          <p class="btn__text">View All Projects</p>
+        </a>
+      </section>
+      <section class="testimonials section container">
+        <h2 class="section__title">Reviews</h2>
+        <div class="testimonials__container">
+          <div class="testimonials__texts">
+            <h3 class="person__name">Jessica Evans</h3>
+            <p class="person__declaration">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan condimentum
+              massa ac malesuada, consectetur adipiscing elit. <br />
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt.
+            </p>
+            <svg class="testimonials__icon">
+              <use href="./images/icons.svg#icon-quotations"></use>
+            </svg>
+          </div>
+          <img class="person__img" src="./images/jessica.jpg" alt="Jessica picture" />
+          <div class="section__name">TESTIMONIALS</div>
         </div>
       </section>
     </main>

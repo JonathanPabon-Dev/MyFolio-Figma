@@ -1,0 +1,63 @@
+.projects {
+  @include createFlex($direction: column);
+  &__container {
+    position: relative;
+    @include createFlex;
+    .section__name {
+      @include positionSectionName(left);
+    }
+  }
+  &__gallery {
+    margin-top: 75px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    .gallery {
+      &__link {
+        position: relative;
+        .project {
+          &__texts {
+            position: absolute;
+            bottom: 0;
+            padding: 50px 30px;
+          }
+          &__title {
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: capitalize;
+          }
+          &__description {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.56;
+          }
+        }
+      }
+      &__img {
+        border-radius: 25px;
+      }
+    }
+    .item1 {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+    .item2 {
+      grid-area: 1 / 3 / 2 / 4;
+    }
+    .item3 {
+      grid-area: 2 / 1 / 3 / 2;
+    }
+    .item4 {
+      grid-area: 2 / 2 / 3 / 4;
+    }
+    .item5 {
+      grid-area: 3 / 1 / 4 / 3;
+    }
+    .item6 {
+      grid-area: 3 / 3 / 4 / 4;
+    }
+  }
+}

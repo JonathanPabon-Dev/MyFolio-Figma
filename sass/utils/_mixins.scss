@@ -1,5 +1,17 @@
-@mixin centered($justify: center) {
+@mixin createFlex($align: center, $justify: center, $direction: row) {
   display: flex;
-  align-items: center;
+  align-items: $align;
   justify-content: $justify;
+  @if $direction != row {
+    flex-direction: $direction;
+  }
+}
+
+@mixin positionSectionName($site) {
+  position: absolute;
+  #{$site}: calc(-100px - $section-name-height); //Calc is based in text height
+  transform: translateX(50%) rotate(-90deg);
+  @if $site == left {
+    transform: translateX(-50%) rotate(-90deg);
+  }
 }

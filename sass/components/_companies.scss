@@ -1,0 +1,17 @@
+.companies {
+  @include createFlex;
+  margin-bottom: 60px;
+  height: 100px;
+  background-color: getColor('bg-color2');
+  &__list {
+    @include createFlex;
+    overflow-x: hidden;
+    gap: 30px;
+    .company {
+      &__item {
+        display: flex;
+        height: 35px;
+      }
+    }
+  }
+}

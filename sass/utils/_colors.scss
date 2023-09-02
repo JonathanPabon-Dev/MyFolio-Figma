@@ -1,9 +1,13 @@
 $colors: (
   'white': #fff,
   'white-o40': #ffffff66,
+  'white-o20': #ffffff33,
   'bg-color1': #101113,
   'bg-color2': #1e1e1e,
+  'tx-color1': #acacac,
+  'tx-color2': #a9a9a9,
   'highlighted-color': #a6a001,
+  'quotes-color': #232a33,
 );
 
 @function getColor($key) {

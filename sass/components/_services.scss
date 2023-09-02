@@ -1,0 +1,11 @@
+.services {
+  position: relative;
+  @include createFlex;
+  .cards__list {
+    @include createFlex;
+    column-gap: 25px;
+  }
+  .section__name {
+    @include positionSectionName(right);
+  }
+}

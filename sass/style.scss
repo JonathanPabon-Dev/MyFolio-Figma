@@ -1,5 +1,6 @@
 @import 'utils/fonts';
 @import 'utils/colors';
+@import 'utils/variables';
 @import 'utils/mixins';
 
 * {
@@ -13,22 +14,22 @@ body {
   background-color: getColor('bg-color1');
 }
 
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  width: 1280px;
 }
 
-.section {
-  padding-top: 120px;
-}
-
-a {
+.link {
+  color: inherit;
   text-decoration: none;
-  cursor: pointer;
   &:visited {
     color: currentColor;
   }
@@ -40,5 +41,19 @@ a {
   cursor: pointer;
 }
 
+:focus {
+  outline: none;
+}
+
 @import 'components/header';
+@import 'components/logo';
+@import 'components/navbar';
+@import 'components/btn';
+@import 'components/section';
 @import 'components/hero';
+@import 'components/companies';
+@import 'components/services';
+@import 'components/card';
+@import 'components/filters';
+@import 'components/projects';
+@import 'components/testimonials';

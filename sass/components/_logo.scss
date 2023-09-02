@@ -1,0 +1,8 @@
+.logo {
+  font-size: 45px;
+  font-family: getFont('special');
+  color: getColor('white');
+  &--color {
+    color: getColor('highlighted-color');
+  }
+}
