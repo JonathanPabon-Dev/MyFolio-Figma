@@ -1,0 +1,104 @@
+.footer {
+  margin-top: 60px;
+  padding-top: 60px;
+  background-color: getColor('bg-color2');
+  &__container {
+    @include createFlex($align: flex-start, $justify: space-between);
+  }
+  &__address {
+    display: flex;
+    flex-direction: column;
+    .address {
+      &__text {
+        width: 367px;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.3;
+        padding-top: 40px;
+        padding-bottom: 30px;
+      }
+      &__link {
+        @include createFlex($justify: flex-start);
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.3;
+        max-width: fit-content;
+        &--phone {
+          margin-bottom: 15px;
+        }
+      }
+      &__icon {
+        display: flex;
+        align-items: center;
+        width: 26px;
+        height: 26px;
+        margin-right: 20px;
+        padding: 6px;
+        background-color: getColor('white-o20');
+      }
+    }
+  }
+  &__links {
+    @include createFlex($align: flex-start);
+    column-gap: 50px;
+    &--container {
+      display: flex;
+      flex-direction: column;
+      width: 170px;
+      row-gap: 20px;
+      .links {
+        &__title {
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 1.3;
+        }
+        &__list {
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+        }
+        &__item {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+  .country {
+    width: 300px;
+    &__title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 30px;
+    }
+    &__select {
+      @include createFlex($justify: space-between);
+      cursor: pointer;
+      padding: 13px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.3;
+      border-bottom: 1px solid getColor('border-color1');
+      &--version {
+        margin-bottom: 15px;
+      }
+    }
+    &__icon {
+      width: 9px;
+      height: 5px;
+    }
+  }
+  .rights {
+    margin-top: 30px;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    border-top: 1px solid getColor('border-color1');
+  }
+}
